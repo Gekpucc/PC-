@@ -14,6 +14,10 @@ from app.routes import (
     records,
     equipment_logs,
     lab_maintenance_logs,
+    tech_certifications,
+    step_assignments,
+    time_logs,
+    queue_priority_flags,
 )
 
 app = FastAPI(
@@ -35,6 +39,10 @@ app.include_router(baths.router)
 app.include_router(records.router)
 app.include_router(equipment_logs.router)
 app.include_router(lab_maintenance_logs.router)
+app.include_router(tech_certifications.router)
+app.include_router(step_assignments.router)
+app.include_router(time_logs.router)
+app.include_router(queue_priority_flags.router)
 
 
 @app.get("/health")

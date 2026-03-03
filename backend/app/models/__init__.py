@@ -16,6 +16,10 @@ from .bath import Bath
 from .record import Record
 from .equipment_log import EquipmentLog
 from .lab_maintenance_log import LabMaintenanceLog
+from .tech_certification import TechCertification
+from .step_assignment import StepAssignment
+from .time_log import TimeLog
+from .queue_priority_flag import QueuePriorityFlag
 
 __all__ = [
     "Customer",
@@ -36,4 +40,8 @@ __all__ = [
     "Record",
     "EquipmentLog",
     "LabMaintenanceLog",
+    "TechCertification",
+    "StepAssignment",
+    "TimeLog",
+    "QueuePriorityFlag",
 ]
