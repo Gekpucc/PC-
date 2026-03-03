@@ -1,6 +1,16 @@
 from fastapi import FastAPI
 
-from app.routes import work_orders, intake_records, cleaning_procedures, work_plans
+from app.routes import (
+    work_orders,
+    intake_records,
+    cleaning_procedures,
+    work_plans,
+    section_groups,
+    steps,
+    substeps,
+    step_field_definitions,
+    step_field_entries,
+)
 
 app = FastAPI(
     title="Process Execution System",
@@ -12,6 +22,11 @@ app.include_router(work_orders.router)
 app.include_router(intake_records.router)
 app.include_router(cleaning_procedures.router)
 app.include_router(work_plans.router)
+app.include_router(section_groups.router)
+app.include_router(steps.router)
+app.include_router(substeps.router)
+app.include_router(step_field_definitions.router)
+app.include_router(step_field_entries.router)
 
 
 @app.get("/health")
