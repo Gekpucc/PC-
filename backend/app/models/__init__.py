@@ -12,6 +12,10 @@ from .step import Step
 from .substep import SubStep
 from .step_field_definition import StepFieldDefinition
 from .step_field_entry import StepFieldEntry
+from .bath import Bath
+from .record import Record
+from .equipment_log import EquipmentLog
+from .lab_maintenance_log import LabMaintenanceLog
 
 __all__ = [
     "Customer",
@@ -28,4 +32,8 @@ __all__ = [
     "SubStep",
     "StepFieldDefinition",
     "StepFieldEntry",
+    "Bath",
+    "Record",
+    "EquipmentLog",
+    "LabMaintenanceLog",
 ]

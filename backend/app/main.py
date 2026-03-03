@@ -10,6 +10,10 @@ from app.routes import (
     substeps,
     step_field_definitions,
     step_field_entries,
+    baths,
+    records,
+    equipment_logs,
+    lab_maintenance_logs,
 )
 
 app = FastAPI(
@@ -27,6 +31,10 @@ app.include_router(steps.router)
 app.include_router(substeps.router)
 app.include_router(step_field_definitions.router)
 app.include_router(step_field_entries.router)
+app.include_router(baths.router)
+app.include_router(records.router)
+app.include_router(equipment_logs.router)
+app.include_router(lab_maintenance_logs.router)
 
 
 @app.get("/health")
