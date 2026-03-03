@@ -20,6 +20,9 @@ from .tech_certification import TechCertification
 from .step_assignment import StepAssignment
 from .time_log import TimeLog
 from .queue_priority_flag import QueuePriorityFlag
+from .tag_template import TagTemplate
+from .instruction_flag import InstructionFlag
+from .procedure_version_history import ProcedureVersionHistory
 
 __all__ = [
     "Customer",
@@ -44,4 +47,7 @@ __all__ = [
     "StepAssignment",
     "TimeLog",
     "QueuePriorityFlag",
+    "TagTemplate",
+    "InstructionFlag",
+    "ProcedureVersionHistory",
 ]

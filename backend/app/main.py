@@ -18,6 +18,9 @@ from app.routes import (
     step_assignments,
     time_logs,
     queue_priority_flags,
+    tag_templates,
+    instruction_flags,
+    procedure_version_history,
 )
 
 app = FastAPI(
@@ -43,6 +46,9 @@ app.include_router(tech_certifications.router)
 app.include_router(step_assignments.router)
 app.include_router(time_logs.router)
 app.include_router(queue_priority_flags.router)
+app.include_router(tag_templates.router)
+app.include_router(instruction_flags.router)
+app.include_router(procedure_version_history.router)
 
 
 @app.get("/health")
