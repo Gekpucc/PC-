@@ -23,6 +23,11 @@ from .queue_priority_flag import QueuePriorityFlag
 from .tag_template import TagTemplate
 from .instruction_flag import InstructionFlag
 from .procedure_version_history import ProcedureVersionHistory
+from .traveler import Traveler
+from .nonconformance import Nonconformance
+from .issue_log import IssueLog
+from .witness_record import WitnessRecord
+from .coc import COC
 
 __all__ = [
     "Customer",
@@ -50,4 +55,9 @@ __all__ = [
     "TagTemplate",
     "InstructionFlag",
     "ProcedureVersionHistory",
+    "Traveler",
+    "Nonconformance",
+    "IssueLog",
+    "WitnessRecord",
+    "COC",
 ]

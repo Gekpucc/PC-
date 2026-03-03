@@ -21,6 +21,11 @@ from app.routes import (
     tag_templates,
     instruction_flags,
     procedure_version_history,
+    travelers,
+    nonconformances,
+    issue_logs,
+    witness_records,
+    cocs,
 )
 
 app = FastAPI(
@@ -49,6 +54,11 @@ app.include_router(queue_priority_flags.router)
 app.include_router(tag_templates.router)
 app.include_router(instruction_flags.router)
 app.include_router(procedure_version_history.router)
+app.include_router(travelers.router)
+app.include_router(nonconformances.router)
+app.include_router(issue_logs.router)
+app.include_router(witness_records.router)
+app.include_router(cocs.router)
 
 
 @app.get("/health")
