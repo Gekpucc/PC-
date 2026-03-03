@@ -40,6 +40,7 @@ A **Process Execution System** for aerospace precision cleaning and surface trea
 - po_id (PK)
 - customer_id (FK)
 - part_number, qty, due_date, value, status
+- status (Pending / Partially Received / Received / In Progress / On Hold / Complete / Shipped / Cancelled)
 
 ### 3.3 Receiving / Intake Record
 - intake_id (PK)
@@ -456,3 +457,4 @@ Instruction Flags accumulate on sub-steps. QA/Admin reviews periodically. Approv
 ---
 
 *This document is the single source of truth for all development sessions. Paste relevant sections as context when coding.*
+
