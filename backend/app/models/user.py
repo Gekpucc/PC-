@@ -21,3 +21,5 @@ class User(Base):
     name = Column(String, nullable=False)
     role = Column(Enum(UserRole), nullable=False)
     email = Column(String, nullable=True, unique=True)
+    username = Column(String, nullable=True, unique=True, index=True)
+    password_hash = Column(String, nullable=True)
